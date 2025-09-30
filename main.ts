@@ -1,8 +1,16 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Brendan O'Rourke
+ * Created on: Sep 2025
+ * This program simulates Cookie Clicker
 */
 
-basic.showString('Hello, World!')
+let numberOfCookies = 0
+
+// setup
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+input.onButtonPressed(Button.A, function () {
+     numberOfCookies = numberOfCookies + 1
+     basic.showNumber(numberOfCookies)
+})
